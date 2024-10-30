@@ -80,3 +80,22 @@
   50% { transform: translateY(0%)}
   100% { transform: translateY(-10%)}
 }
+.default-icon {
+  fill: white; /* Default color */
+}
+.default-title {
+  color: #ffffff; /* Default title color using hex */
+}
+.default-text {
+  color: #d1d5db; /* Default text color using hex (gray-200) */
+}
+
+.active-icon {
+  fill: #62BBC1; /* Active color using hex (blue) */
+}
+.active-title {
+  color: #E6C5C5; /* Active title color using hex (red-500) */
+}
+.active-text {
+  color: #E6C5C5; /* Active text color using hex (gray-300) */
+}
