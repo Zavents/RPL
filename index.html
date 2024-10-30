@@ -10,6 +10,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      
+    </style>
 <script>
   AOS.init({
     duration: 5000, // Sets the duration for each animation
@@ -159,7 +162,7 @@
   });
 </script>
 
-<section class="relative py-12 bg-white/50 pb-20 h-screen  pt-20">
+<section class="relative py-12 bg-white/50 pb-20  pt-20">
   <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white font-semibold mx-auto pb-10 relative z-20">
     Apasih PPLG Itu ? <br>
 </h1>
@@ -185,46 +188,127 @@
     }
   }
 </script>
-
 <style>
+  @keyframes flip-icon {
+    0% {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(0);
+    }
+}
+
+.card.active .icon {
+    animation: flip-icon 0.6s ease-in-out forwards; /* Adjust duration for speed */
+}
 
 </style>
-  
   <div class="absolute inset-0 bg-cover bg-center blud-md" style="background-image: url('./public/images/tujuan/tujuan-bg.jpg');">
     <div class="absolute inset-0 bg-black opacity-80"></div>
   </div>
-
   <div class="container relative z-10 grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
     <div class="animate__animated animate__fadeInLeft ms1s">
       <h1 class="mt-2 text-3xl font-bold text-white md:text-4xl tracking-wide">Tujuan Jurusan</h1>    
       <p class="mt-4 text-gray-200">Jurusan PPLG, tujuan jurusan ini adalah membekali siswa dengan keterampilan dalam pengembangan perangkat lunak, pemrograman, dan teknologi digital. Kami fokus pada penguasaan teknik coding, pembuatan aplikasi, dan analisis sistem yang relevan dengan industri. Harapannya, lulusan siap bersaing dalam dunia kerja atau melanjutkan pendidikan lebih tinggi.</p>
     </div>
     <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2" id="card-container">
-     <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-300/50 transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
-          <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
-              C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
-              c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
-              c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
-              C218.167,463.988,206.929,475.226,193.015,475.226z"/>
-          <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
-          <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
-          <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
-          <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
-              c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
-              l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
-              c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
-              v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
-              c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
-              c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
-      </svg>
-      <div>
-          <h3 class="font-bold text-xl text-white">Mobile Apps</h3>
-          <p class="text-gray-200 mt-2">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+      <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-300/50 transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+            <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+                C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+                c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+                c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+                C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+            <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+            <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+            <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+            <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+                c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+                l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+                c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+                v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+                c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+                c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+        </svg>
+        <div>
+            <h3 class="font-bold text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
       </div>
+      <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-300/50 transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+            <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+                C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+                c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+                c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+                C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+            <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+            <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+            <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+            <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+                c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+                l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+                c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+                v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+                c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+                c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+        </svg>
+        <div>
+            <h3 class="font-bold text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+      <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-300/50 transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+            <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+                C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+                c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+                c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+                C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+            <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+            <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+            <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+            <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+                c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+                l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+                c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+                v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+                c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+                c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+        </svg>
+        <div>
+            <h3 class="font-bold text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>
+      <div class="relative flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-300/50 transition-colors duration-300 group card" data-aos="zoom-in" data-aos-delay="500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+            <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
+                C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
+                c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
+                c-13.892,0-25.108-11.238-25.108-25.108c0-13.913,11.217-25.13,25.108-25.13c13.913,0,25.152,11.238,25.152,25.13
+                C218.167,463.988,206.929,475.226,193.015,475.226z"/>
+            <rect x="102.785" y="95.386" width="70.256" height="42.84"/>
+            <rect x="102.785" y="205.073" width="70.256" height="42.84"/>
+            <rect x="102.785" y="319.873" width="70.256" height="42.818"/>
+            <path d="M422.399,223.905c-2.481-12.986-7.507-25.001-14.625-35.506l25.195-25.216l-25.734-25.648l-25.152,25.173
+                c-10.462-7.161-22.541-12.123-35.484-14.625v-35.7h-36.411v35.7c-12.964,2.502-24.936,7.485-35.505,14.625l-25.108-25.173
+                l-25.734,25.669l25.152,25.216c-7.097,10.505-12.101,22.52-14.582,35.484h-35.657v36.39h35.656
+                c2.481,12.921,7.507,24.936,14.603,35.484l-25.173,25.173l25.734,25.626l25.173-25.152c10.527,7.161,22.541,12.144,35.505,14.668
+                v35.635h36.411v-35.656c12.942-2.481,24.936-7.507,35.484-14.625l25.152,25.152l25.734-25.648l-25.195-25.173
+                c7.118-10.505,12.123-22.541,14.625-35.505h35.678l0,0v-36.368H422.399z M328.437,281.693c-21.894,0-39.669-17.688-39.669-39.604
+                c0-21.894,17.774-39.69,39.669-39.69c21.916,0,39.604,17.774,39.604,39.69C368.041,264.026,350.309,281.693,328.437,281.693z"/>
+        </svg>
+        <div>
+            <h3 class="font-bold text-xl text-white">Mobile Apps</h3>
+            <p class="text-gray-200 mt-2">Siswa diharapkan mampu membuat aplikasi mobile berbasis sistem operasi Android untuk dioperasikan di smartphone masing-masing.</p>
+        </div>
+      </div>  
     </div>
-
-    
+  </div>
 </section>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -237,14 +321,14 @@
     function animateCards() {
       cards.forEach((card, index) => {
         // Remove active classes
-        card.classList.remove("scale-125", "bg-gray-800");
+        card.classList.remove("scale-125", "bg-[#4A2C2A]");
         card.querySelector(".icon").classList.remove("active-icon");
         card.querySelector("h3").classList.remove("active-title");
         card.querySelector("p").classList.remove("active-text");
   
         if (index === currentIndex) {
           // Add active state classes
-          card.classList.add("scale-125", "bg-gray-800");
+          card.classList.add("scale-125", "bg-[#4A2C2A]");
           card.querySelector(".icon").classList.add("active-icon");
           card.querySelector("h3").classList.add("active-title");
           card.querySelector("p").classList.add("active-text");
