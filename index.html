@@ -10,7 +10,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+
     <style>
+      body {
+        font-family: 'Fira Mono', monospace  !important;
+      }
       
     </style>
 <script>
@@ -25,7 +32,7 @@
 </head>
 <body class="antialiased bg-body text-body font-body" loading="lazy " decoding="ansync" style="background-image: url(./public/images/background.gif);">
   <section x-data="{ mobileNavOpen: false }" class="bg-gradient-fuchsia background-animate overflow-hidden ">
-  <nav class="font-serif fixed w-full z-50 -mt-2">
+  <nav class=" fixed w-full z-50 -mt-2">
     <div class="flex items-center justify-between px-8 py-5">
       <div class="w-auto">
         <div class="flex flex-wrap items-center">
@@ -38,17 +45,17 @@
       </div>
       <div class="w-auto hidden lg:block justify-center align-middle">
         <ul class="flex items-center">
-          <li class="font-heading mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">About Us</a></li>
-          <li class="font-heading mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Guru</a></li>
-          <li class="font-heading mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Fasilitas</a></li>
-          <li class="font-heading mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Website Kami</a></li>
-          <li class="font-heading mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Photo & Video</a></li>
+          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">About Us</a></li>
+          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Guru</a></li>
+          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Fasilitas</a></li>
+          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Website Kami</a></li>
+          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-125  duration-600 hover:text-gray-300"><a href="#">Photo & Video</a></li>
         </ul>
       </div>
       <div class="w-auto">
         <div class="flex flex-wrap items-center">
           <div class="w-auto hidden lg:block">
-            <button class="font-heading block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
+            <button class=" block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
           </div>
           <div class="w-auto lg:hidden">
             <button x-on:click="mobileNavOpen = !mobileNavOpen">
@@ -83,22 +90,22 @@
           </div>
           <div class="flex flex-col justify-center py-8 w-full">
             <ul>
-              <li class="mb-12"><a class="font-heading font-medium text-lg text-gray-900 transition-transform duration-300 hover:scale-125" href="#">About Us</a></li>
-              <li class="mb-12"><a class="font-heading font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Guru</a></li>
-              <li class="mb-12"><a class="font-heading font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Fasilitas</a></li>
-              <li class="mb-12"><a class="font-heading font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Website Kami</a></li>
-              <li><a class="font-heading font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Photo & Video</a></li>
+              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 transition-transform duration-300 hover:scale-125" href="#">About Us</a></li>
+              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Guru</a></li>
+              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Fasilitas</a></li>
+              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Website Kami</a></li>
+              <li><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#">Photo & Video</a></li>
             </ul>
           </div>
           <div class="flex flex-col justify-end w-full">
             <div class="flex flex-wrap">
               <div class="w-full">
-                <button class="p-0.5 font-heading block w-full text-lg text-gray-900 font-medium rounded-10">
+                <button class="p-0.5  block w-full text-lg text-gray-900 font-medium rounded-10">
                   <div class="py-2 px-5 rounded-10"></div>
                 </button>
               </div>
               <div class="w-full">
-                <button class="group relative p-0.5 font-heading block w-full text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
+                <button class="group relative p-0.5  block w-full text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
                   <div class="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500"></div>
                   <div class="py-2 px-5 bg-white rounded-lg">
                     <p class="relative z-10">SMK NEGERI 2 PEKANBARU</p>
@@ -120,7 +127,7 @@
       </div>
       <div class="flex-1 p-6">
         <div class="lg:max-w-2xl mx-auto">
-          <div class="mb-6 font-heading flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
+          <div class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
             <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.33427 2.74895C6.54382 2.10403 7.45621 2.10403 7.66575 2.74895L8.41445 5.0532C8.50816 5.34162 8.77693 5.53689 9.08019 5.53689H11.503C12.1811 5.53689 12.4631 6.40462 11.9145 6.8032L9.95436 8.22731C9.70902 8.40556 9.60636 8.72152 9.70007 9.00994L10.4488 11.3142C10.6583 11.9591 9.92018 12.4954 9.37158 12.0968L7.41146 10.6727C7.16612 10.4945 6.8339 10.4945 6.58856 10.6727L4.62844 12.0968C4.07985 12.4954 3.34171 11.9591 3.55126 11.3142L4.29995 9.00994C4.39367 8.72152 4.29101 8.40556 4.04566 8.22731L2.08555 6.8032C1.53695 6.40462 1.81889 5.53689 2.497 5.53689H4.91984C5.22309 5.53689 5.49186 5.34162 5.58558 5.0532L6.33427 2.74895Z" fill="white"></path>
             </svg>
@@ -128,13 +135,13 @@
               <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="PPLG Icon" class="w-20">
             </span>
           </div>
-          <h1 class="mb-6 font-heading text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text p-4">Pengembangan Perangkat Lunak dan Gim</h1>
+          <h1 class="mb-6  text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text p-4">Pengembangan Perangkat Lunak dan Gim</h1>
           <p class="mb-10 font-medium text-xl text-center text-white">
             Website mengenai Kelas RPL Angkatan 2022/2023
             <br>
             Kreasi Website dan Design Gambar Lainnya !
           </p>
-          <button class="group mb-9 relative flex items-center justify-center font-heading px-24 py-5 mx-auto w-full lg:w-auto uppercase text-white text-xs font-semibold tracking-px bg-gray-900 overflow-hidden rounded-md">
+          <button class="group mb-9 relative flex items-center justify-center  px-24 py-5 mx-auto w-full lg:w-auto uppercase text-white text-xs font-semibold tracking-px bg-gray-900 overflow-hidden rounded-md">
             <div class="absolute transform -translate-x-full group-hover:-translate-x-0 h-full w-full transition ease-in-out duration-500 bg-gradient-fuchsia"></div>
             <p class="relative z-10 mr-2">Project kami</p>
             <svg class="relative z-10" width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
