@@ -168,7 +168,7 @@
 <script>
   window.addEventListener("scroll", function() {
     const navbar = document.querySelector("nav");
-    if (window.scrollY > 100) { // Adjust scroll threshold as needed
+    if (window.scrollY > 100) { 
       navbar.classList.add("navbar-scrolled");
     } else {
       navbar.classList.remove("navbar-scrolled");
@@ -216,7 +216,7 @@
 }
 
 .card.active .icon {
-    animation: flip-icon 0.6s ease-in-out forwards; /* Adjust duration for speed */
+    animation: flip-icon 0.6s ease-in-out forwards;
 }
 
 </style>
@@ -224,7 +224,6 @@
     <div class="absolute inset-0 bg-black opacity-80"></div>
   </div>
   <div class="container relative z-10 grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
-    <!-- Centered Column -->
     <div class="flex items-center justify-center animate__animated animate__fadeInLeft ms1s lg:col-span-1 lg:row-start-1">
         <div>
             <h1 class="mt-2 text-3xl text-white md:text-4xl tracking-wide md:text-center"  data-aos="zoom-out-right">Tujuan Jurusan</h1>    
