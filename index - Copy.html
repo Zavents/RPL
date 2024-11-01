@@ -128,17 +128,17 @@
   
   <div class="relative container mx-auto px-4 !min-h-screen   pb-20 p-4">
     <div class="relative flex flex-wrap justify-center items-center -m-6 lg:pt-32 pb-36 min-h-screen ">
-      <div class="w-full lg:w-auto p-6 self-start pt-10" data-aos="fade-right" data-aos-delay="200">
+      <div class="w-full lg:w-auto p-6 self-start pt-10">
         <img loading="lazy" decoding="async" class="mx-auto w-60 transition-transform duration-300 hover:scale-125 " loading="lazy" decoding="async" src="./public/images/wildan-header.svg" alt="">
         <p class="text-lg text-center mt-4 text-white">Wildan Fathan</p>
       </div>
       <div class="flex-1 p-6">
-        <div class="lg:max-w-2xl mx-auto "data-aos="zoom-in"     data-aos-delay="600">
-          <div  class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase  tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse  ">
+        <div class="lg:max-w-2xl mx-auto">
+          <div class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase  tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
             <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.33427 2.74895C6.54382 2.10403 7.45621 2.10403 7.66575 2.74895L8.41445 5.0532C8.50816 5.34162 8.77693 5.53689 9.08019 5.53689H11.503C12.1811 5.53689 12.4631 6.40462 11.9145 6.8032L9.95436 8.22731C9.70902 8.40556 9.60636 8.72152 9.70007 9.00994L10.4488 11.3142C10.6583 11.9591 9.92018 12.4954 9.37158 12.0968L7.41146 10.6727C7.16612 10.4945 6.8339 10.4945 6.58856 10.6727L4.62844 12.0968C4.07985 12.4954 3.34171 11.9591 3.55126 11.3142L4.29995 9.00994C4.39367 8.72152 4.29101 8.40556 4.04566 8.22731L2.08555 6.8032C1.53695 6.40462 1.81889 5.53689 2.497 5.53689H4.91984C5.22309 5.53689 5.49186 5.34162 5.58558 5.0532L6.33427 2.74895Z" fill="white"></path>
             </svg>
-            <span class="matrix-text " >
+            <span class="matrix-text">
               <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="PPLG Icon" class="w-20">
             </span>
           </div>
@@ -158,7 +158,7 @@
           <ul class="flex justify-center"></ul>
         </div>
       </div>
-      <div class="w-full lg:w-auto p-6 self-end" data-aos="fade-left" data-aos-delay="400">
+      <div class="w-full lg:w-auto p-6 self-end">
         <img loading="lazy" decoding="async" class="mx-auto w-60 transition-transform duration-300 hover:scale-125" loading="lazy" decoding="async" src="./public/images/rahsya-header.svg" alt="">
         <p class="text-lg text-center  mt-4 text-white">Rahsya Benova Akbar</p>
       </div>
@@ -168,7 +168,7 @@
 <script>
   window.addEventListener("scroll", function() {
     const navbar = document.querySelector("nav");
-    if (window.scrollY > 100) { 
+    if (window.scrollY > 100) { // Adjust scroll threshold as needed
       navbar.classList.add("navbar-scrolled");
     } else {
       navbar.classList.remove("navbar-scrolled");
@@ -176,11 +176,11 @@
   });
 </script>
 
-<section class="relative py-12 bg-white/50 pb-20  pt-20 p-4" >
-  <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white  mx-auto pb-10 relative z-20" data-aos="zoom-out-down">
+<section class="relative py-12 bg-white/50 pb-20  pt-20 p-4">
+  <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white  mx-auto pb-10 relative z-20">
     Apasih PPLG Itu ? <br>
 </h1>
-<h1 class="max-w-5xl mb-4 text-md tracking-tight leading-none xl:text-lg text-center text-gray-200  mx-auto pb-10 relative z-20" data-aos="zoom-out-up" data-aos-delay="200">
+<h1 class="max-w-5xl mb-4 text-md tracking-tight leading-none xl:text-lg text-center text-gray-200  mx-auto pb-10 relative z-20">
   PPLG (Pengembangan Perangkat Lunak dan Gim) adalah bidang keahlian yang fokus pada pembuatan dan pengembangan perangkat lunak, termasuk aplikasi dan gim.
   <span id="moreText" style="display: none;">
     Dalam PPLG, siswa belajar berbagai keterampilan seperti pemrograman, desain antarmuka, pemecahan masalah, dan pengujian perangkat lunak, yang berguna di dunia industri teknologi.
@@ -216,23 +216,17 @@
 }
 
 .card.active .icon {
-    animation: flip-icon 0.6s ease-in-out forwards;
+    animation: flip-icon 0.6s ease-in-out forwards; /* Adjust duration for speed */
 }
 
 </style>
-
-
   <div class="absolute inset-0 bg-cover bg-center blud-md" style="background-image: url('./public/images/tujuan/tujuan-bg.jpg');">
     <div class="absolute inset-0 bg-black opacity-80"></div>
   </div>
   <div class="container relative z-10 grid grid-cols-1 gap-10 px-6 mx-auto lg:grid-cols-3">
-    <div class="flex items-center justify-center animate__animated animate__fadeInLeft ms1s lg:col-span-1 lg:row-start-1">
-        <div>
-            <h1 class="mt-2 text-3xl text-white text-center lg:text-left md:text-4xl tracking-wide "  data-aos="zoom-out-right">Tujuan Jurusan</h1>    
-            <p class="mt-4 text-gray-200" data-aos="zoom-out-left" data-aos-offset="200"            >
-                Jurusan PPLG, tujuan jurusan ini adalah membekali siswa dengan keterampilan dalam pengembangan perangkat lunak, pemrograman, dan teknologi digital. Kami fokus pada penguasaan teknik coding, pembuatan aplikasi, dan analisis sistem yang relevan dengan industri. Harapannya, lulusan siap bersaing dalam dunia kerja atau melanjutkan pendidikan lebih tinggi.
-            </p>
-        </div>
+    <div class="animate__animated animate__fadeInLeft ms1s">
+      <h1 class="mt-2 text-3xl  text-white md:text-4xl tracking-wide">Tujuan Jurusan</h1>    
+      <p class="mt-4 text-gray-200">Jurusan PPLG, tujuan jurusan ini adalah membekali siswa dengan keterampilan dalam pengembangan perangkat lunak, pemrograman, dan teknologi digital. Kami fokus pada penguasaan teknik coding, pembuatan aplikasi, dan analisis sistem yang relevan dengan industri. Harapannya, lulusan siap bersaing dalam dunia kerja atau melanjutkan pendidikan lebih tinggi.</p>
     </div>
     <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2" id="card-container">
 
@@ -335,85 +329,6 @@
     </div>
   </div>
 </section>
-
-
-
-
-
-
-<section class="container mx-auto md:pb-28 lg:px-8" id="card">
-  <div class="p-10 mx-0 sm:mx-32">
-    <h2 class="text-2xl font-extrabold text-center text-gray-200 sm:text-3xl">
-      CARD
-    </h2>
-  </div>
-
-  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 duration-500">
-    <div class="grid-items hover:scale-105">
-      <a href="#" class="block bg-gray-700/60 border-2 shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400">
-        <img loading="lazy" alt="" src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl">
-  
-        <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
-          Lorem, ipsum dolor.
-        </h3>
-  
-        <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
-        </p>
-      </a>
-    </div>
-
-    <div class="grid-items hover:scale-105">
-      <a href="#" class="block bg-gray-700/60 border-2 shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400">
-        <img loading="lazy" alt="" src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl">
-  
-        <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
-          Lorem, ipsum dolor.
-        </h3>
-  
-        <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
-        </p>
-      </a>
-    </div>
-
-    <div class="grid-items hover:scale-105">
-      <a href="#" class="block bg-gray-700/60 border-2 shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400">
-        <img loading="lazy" alt="" src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl">
-  
-        <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
-          Lorem, ipsum dolor.
-        </h3>
-  
-        <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
-        </p>
-      </a>
-    </div>
-
-    <div class="grid-items hover:scale-105">
-      <a href="#" class="block bg-gray-700/60 border-2 shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400">
-        <img loading="lazy" alt="" src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl">
-  
-        <h3 class="px-5 mt-4 text-lg font-bold text-white sm:text-sm md:text-lg">
-          Lorem, ipsum dolor.
-        </h3>
-  
-        <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt.
-        </p>
-      </a>
-    </div>
-  </div>
-<!-- Large 16:9 image below the grid -->
-<div class="mt-8">
-  <img 
-    src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" 
-    alt="Large Image" 
-    class="w-full h-auto object-cover rounded-lg aspect-video">
-</div>
-</section>  
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({ once: false }); // Ensures animations repeat when triggered
