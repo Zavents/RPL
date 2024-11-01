@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'Nunito Sans';
-  src: url('../font/NunitoSans_10pt-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-family: '印品鸿蒙体';
+  src: url('../font/yinpin_hongmengti.ttf') format('truetype');
+  font-weight: normal !important;
   font-style: normal;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: '印品鸿蒙体', sans-serif;
 }
+
 
 html {
   scroll-behavior: smooth;
