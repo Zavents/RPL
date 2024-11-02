@@ -337,7 +337,7 @@
 </section>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init({ once: false }); // Ensures animations repeat when triggered
+  AOS.init({ once: false }); 
 
   document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
@@ -345,34 +345,29 @@
   
     function animateCards() {
       cards.forEach((card, index) => {
-        // Remove active classes
         card.classList.remove("scale-125", "bg-[#4A2C2A]");
         card.querySelector(".icon").classList.remove("active-icon");
         card.querySelector("h3").classList.remove("active-title");
         card.querySelector("p").classList.remove("active-text");
   
         if (index === currentIndex) {
-          // Add active state classes
           card.classList.add("scale-125", "bg-[#4A2C2A]");
           card.querySelector(".icon").classList.add("active-icon");
           card.querySelector("h3").classList.add("active-title");
           card.querySelector("p").classList.add("active-text");
   
-          // Reset animations by removing classes, forcing reflow, and re-adding them
           const img = card.querySelector(".icon");
           const h3 = card.querySelector("h3");
           const p = card.querySelector("p");
   
-          // Reset animations by removing classes, forcing reflow, and re-adding them
           img.classList.remove("animate__animated", "animate__flipInX");
           h3.classList.remove("animate__animated", "animate__fadeInLeft");
           p.classList.remove("animate__animated", "animate__fadeInUp");
   
-          void img.offsetWidth; // Trigger reflow
+          void img.offsetWidth; 
           void h3.offsetWidth;
           void p.offsetWidth;
   
-          // Animate components inside the card
           setTimeout(() => {
             img.classList.add("animate__animated", "animate__flipInX");
             h3.classList.add("animate__animated", "animate__fadeInLeft");
@@ -381,11 +376,9 @@
         }
       });
   
-      // Move to the next card
       currentIndex = (currentIndex + 1) % cards.length;
     }
   
-    // Start animation loop every 5 seconds
     setInterval(animateCards, 5000);
   });
   
