@@ -4,15 +4,16 @@
     <title>Page title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./public/css/tailwind/tailwind.min.css"> 
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/pplg-white-icon.svg">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/4.0.0-beta.2/fancybox.min.css" />
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/tailwind/tailwind.min.css"> 
+    <link rel="stylesheet" href="./public/css/animate.css" />
+    <link rel="stylesheet" href="./public/css/aos.css" />
+    <link rel="stylesheet" href="./public/css/swiper.css" />
+
+
+
 
 
 
@@ -31,7 +32,6 @@
     </style>
 
 
-    <script src="./public/js/alpine.js" defer></script>
 </head>
 <body class="antialiased bg-body text-body font-body" loading="lazy " decoding="ansync" style="background-image: url(./public/images/background.gif);">
   <section x-data="{ mobileNavOpen: false }" class="bg-gradient-fuchsia background-animate overflow-hidden ">
@@ -428,21 +428,7 @@
 
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          new Swiper('.swiper-container', {
-            loop: true, 
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-              delay: 5000, 
-              disableOnInteraction: false,
-            },
-          });
-        });
-      </script>
+
     </div>
   </section>
 </section>
@@ -554,54 +540,10 @@
   </div>
 </section>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({ once: false }); 
+<script src="./public/js/aos.js"></script>
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".card");
-    let currentIndex = 0;
-  
-    function animateCards() {
-      cards.forEach((card, index) => {
-        card.classList.remove("scale-125", "bg-[#4A2C2A]");
-        card.querySelector(".icon").classList.remove("active-icon");
-        card.querySelector("h3").classList.remove("active-title");
-        card.querySelector("p").classList.remove("active-text");
-  
-        if (index === currentIndex) {
-          card.classList.add("scale-125", "bg-[#4A2C2A]");
-          card.querySelector(".icon").classList.add("active-icon");
-          card.querySelector("h3").classList.add("active-title");
-          card.querySelector("p").classList.add("active-text");
-          const img = card.querySelector(".icon");
-          const h3 = card.querySelector("h3");
-          const p = card.querySelector("p");
-
-          img.classList.remove("animate__animated", "animate__flipInX");
-          h3.classList.remove("animate__animated", "animate__fadeInLeft");
-          p.classList.remove("animate__animated", "animate__fadeInUp");
-  
-          void img.offsetWidth; 
-          void h3.offsetWidth;
-          void p.offsetWidth;
-  
-          setTimeout(() => {
-            img.classList.add("animate__animated", "animate__flipInX");
-            h3.classList.add("animate__animated", "animate__fadeInLeft");
-            p.classList.add("animate__animated", "animate__fadeInUp");
-          }, 0);
-        }
-      });
-  
-      currentIndex = (currentIndex + 1) % cards.length;
-    }
-
-    setInterval(animateCards, 5000);
-  });
-  
-  
-</script>
+<script src="./public/js/main.js"></script>
+<script src="./public/js/alpine.js" defer></script>
 </body>
 </html>
 
