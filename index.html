@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <title>Page title</title>
+    
+    <!-- author -->
+    <meta name="author" content="Zavents">
+    <meta name="description" content="Website menge ">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/pplg-white-icon.svg">
@@ -161,16 +166,6 @@
     </div>
   </div>
 </section >
-<script>
-  window.addEventListener("scroll", function() {
-    const navbar = document.querySelector("nav");
-    if (window.scrollY > 100) { 
-      navbar.classList.add("navbar-scrolled");
-    } else {
-      navbar.classList.remove("navbar-scrolled");
-    }
-  });
-</script>
 
 <section id="about">
   <section class="relative py-12 bg-white/50 pb-20  pt-20 p-4"  >
@@ -184,22 +179,6 @@
     </span>
     <a id="readMoreLink" href="javascript:void(0);" onclick="toggleReadMore()" class="text-gray-300 hover:underline">Read more</a>
   </h1>
-
-  <!-- malas -->
-  <script>
-    function toggleReadMore() {
-      const moreText = document.getElementById("moreText");
-      const readMoreLink = document.getElementById("readMoreLink");
-
-      if (moreText.style.display === "none") {
-        moreText.style.display = "inline";
-        readMoreLink.innerText = "Read less";
-      } else {
-        moreText.style.display = "none";
-        readMoreLink.innerText = "Read more";
-      }
-    }
-  </script>
   <style>
     @keyframes flip-icon {
       0% {
