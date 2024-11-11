@@ -3,6 +3,10 @@ module.exports = {
     {
       theme: {
         extend: {
+          fontFamily: {
+            custom: ['Poppins', 'sans-serif'], // Add the custom font family here
+            header: ['印品鸿蒙体', 'sans-serif'],
+          },
           screens: {
             sm: '640px',
             md: '768px',
@@ -1148,6 +1152,7 @@ module.exports = {
   content: [
     './**/*.html', 
     './src/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/tw-elements/js/**/*.js"
   ],
   plugins: [],
 };

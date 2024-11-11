@@ -17,19 +17,25 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pplg2.pages.dev" />
+    <meta property="og:url" content="https:/pplg2.pages.dev" />
     <meta property="og:title" content="PPLG Website" />
     <meta property="og:description" content="Website Mengenai PPLG SMK Negeri 2 Pekanbaru." />
-    <meta property="og:image" content="https://cdn.kumacdn.club/wp-content/uploads/images/test-bro//pplg2.png" />
+    <meta property="og:image" content="https:/cdn.kumacdn.club/wp-content/uploads/images/test-bro/pplg2.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://pplg2.pages.dev" />
+    <meta property="twitter:url" content="https:/pplg2.pages.dev" />
     <meta property="twitter:title" content="PPLG Website" />
     <meta property="twitter:description" content="Website Mengenai PPLG SMK Negeri 2 Pekanbaru." />
-    <meta property="twitter:image" content="https://cdn.kumacdn.club/wp-content/uploads/images/test-bro//pplg2.png" />
+    <meta property="twitter:image" content="https:/cdn.kumacdn.club/wp-content/uploads/images/test-bro/pplg2.png" />
 
 
+        <!-- Fancybox CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+        <!-- Fancybox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    
     
     <!-- Stylesheet(s) and Icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icon/pplg-white-icon.svg">
@@ -43,11 +49,11 @@
 
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
+        "@context": "https:/schema.org",
         "@type": "WebPage",
         "name": "PPLG Website",
         "description": "Website Mengenai PPLG SMK Negeri 2 Pekanbaru.",
-        "url": "https://pplg2.pages.dev",
+        "url": "https:/pplg2.pages.dev",
         "author": {
           "@type": "Person",
           "name": "Zavents"
@@ -69,6 +75,10 @@
         font-family: '印品鸿蒙体', sans-serif !important;
         font-weight: normal !important;
       }
+      p{
+        font-family: 'poppins', sans-serif !important;
+        font-weight: normal !important;
+      }
     </style>
 
 
@@ -86,92 +96,76 @@ margin: 0;
 ">
 <div class="absolute inset-0 bg-black/70 min-h-screen" style="height: 200vh; /* This sets the section to cover the full viewport height */"></div>
 
-  <nav class=" fixed w-full z-50 -mt-2">
-    <div class="flex items-center justify-between px-8 py-5">
-      <div class="w-auto">
-        <div class="flex flex-wrap items-center">
-          <div class="w-auto mr-14">
-            <a href="#">
-              <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="" class="w-20 transition-transform duration-300 hover:scale-150">
-            </a>
-          </div>
-        </div>
+<nav id="navbar" class="fixed z-50 flex items-center justify-between w-screen py-4 mx-auto transition-all duration-500   flex-nowrap shadow-dark-mild lg:flex-wrap lg:justify-start backdrop-blur-0" data-twe-navbar-ref>
+  <div class="flex flex-wrap items-center justify-between w-full px-8 mx-auto md:px-16">
+      <div class="">
+          <a class="text-xl text-white  ease-in rounded-10 transition-transform duration-300 hover:scale-125" href="#"><img class="ease-in rounded-10 transition-transform duration-300 hover:scale-125" src="./public/images/icon/pplg-white-icon.svg" style="width: 100px;" alt=""></a>
       </div>
-      <div class="w-auto hidden lg:block justify-center align-middle">
-        <ul class="flex items-center">
-          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-90    hover:text-gray-300"><a href="#about">About Us</a></li>
-          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-90   hover:text-gray-300"><a href="#guru">Guru</a></li>
-          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-90   hover:text-gray-300"><a href="#fasilitas">Fasilitas</a></li>
-          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-90   hover:text-gray-300"><a href="#website">Website Kami</a></li>
-          <li class=" mr-9 text-white ease-in rounded-10  px-2 text-lg transition-transform duration-300 hover:scale-90   hover:text-gray-300"><a href="#photo">Photo & Video</a></li>
-        </ul>
-      </div>
-      <div class="w-auto">
-        <div class="flex flex-wrap items-center">
-          <div class="w-auto hidden lg:block">
-            <button class=" block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
-          </div>
-          <div class="w-auto lg:hidden">
-            <button x-on:click="mobileNavOpen = !mobileNavOpen; document.body.classList.toggle('mobile-nav-open')">
-              <svg class="text-gray-800" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="56" height="56" rx="28" fill="currentColor"></rect>
-                <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
-      <div class="fixed inset-0 bg-gray-800 opacity-80 z-40" x-on:click="mobileNavOpen = !mobileNavOpen"></div> <!-- Overlay Background -->
-      <nav class="relative z-50 px-9 py-8 bg-white h-full">
-        <div class="flex flex-wrap justify-between h-full">
-          <div class="w-full">
-            <div class="flex items-center justify-between -m-2">
-              <div class="w-auto p-2">
-                <a class="inline-block" href="#">
-                  <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-black-icon.svg" alt="" class="transition-transform duration-300 hover:scale-125 w-20">
-                </a>
-              </div>
-              <div class="w-auto p-2">
-                <button x-on:click="mobileNavOpen = !mobileNavOpen">
-                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col justify-center py-8 w-full">
-            <ul>
-              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 transition-transform duration-300 hover:scale-125" href="#about">About Us</a></li>
-              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#guru">Guru</a></li>
-              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#fasilitas">Fasilitas</a></li>
-              <li class="mb-12"><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#website">Website Kami</a></li>
-              <li><a class=" font-medium text-lg text-gray-900 hover:text-gray-700 transition-transform duration-300 hover:scale-125" href="#photo">Photo & Video</a></li>
+  <button
+      class="block px-2 relative z-50 text-white bg-transparent border-0 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+      type="button"
+      data-twe-collapse-init
+      data-twe-target="#navbarSupportedContent14"
+      aria-controls="navbarSupportedContent14"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <!-- Hamburger icon -->
+      <span
+      class="[&>svg]:w-7 [&>svg]:stroke-white dark:[&>svg]:stroke-neutral-200">
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor">
+          <path
+          fill-rule="evenodd"
+          d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+          clip-rule="evenodd" />
+      </svg>
+      </span>
+  </button>
+
+      <!-- Collapsible navbar container -->
+      <div
+          class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto justify-center"
+          id="navbarSupportedContent14"
+          data-twe-collapse-item>
+          <!-- Left links -->
+          <ul class="flex flex-col justify-center lg:rounded-full lg:bg-white list-style-none lg:flex-row ms-auto lg:bg-opacity-10" data-twe-navbar-nav-ref>
+          <!-- Home link -->
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                  <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 lg:rounded-full lg:hover:bg-white lg:hover:bg-opacity-20" 
+                  aria-current="page" href="#about"data-twe-nav-link-ref>About us</a>
+              </li>
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                  <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 rounded-full hover:bg-white hover:bg-opacity-20" 
+                  aria-current="page" href="#guru"data-twe-nav-link-ref>Guru</a>
+              </li>
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                  <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 rounded-full hover:bg-white hover:bg-opacity-20" 
+                  aria-current="page" href="#fasilitas"data-twe-nav-link-ref>Fasilitas</a>
+              </li>
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                  <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 rounded-full hover:bg-white hover:bg-opacity-20" 
+                  aria-current="page" href="./kelas.html"data-twe-nav-link-ref>Kelas</a>
+              </li>
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                  <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 rounded-full hover:bg-white hover:bg-opacity-20" 
+                  aria-current="page" href="#website"data-twe-nav-link-ref>Website Kami</a>
+              </li>
+              <li class="py-2 lg:pe-1 ps-1" data-twe-nav-item-ref>
+                <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform     hover:text-gray-300 rounded-full hover:bg-white hover:bg-opacity-20" 
+                aria-current="page" href="#photo"data-twe-nav-link-ref>Photo & Video</a>
+            </li>
             </ul>
-          </div>
-          <div class="flex flex-col justify-end w-full">
-            <div class="flex flex-wrap">
-              <div class="w-full">
-                <button class="p-0.5  block w-full text-lg text-gray-900 font-medium rounded-10">
-                  <div class="py-2 px-5 rounded-10"></div>
-                </button>
-              </div>
-              <div class="w-full">
-                <button class="group relative p-0.5  block w-full text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
-                  <div class="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500"></div>
-                  <div class="py-2 px-5 bg-white rounded-lg">
-                    <p class="relative z-10">SMK NEGERI 2 PEKANBARU</p>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
+
+            
+            <!-- Dropdown -->
+        <div class=" ms-auto" data-twe-dropdown-ref>
+          <button class=" block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
         </div>
-      </nav>
-    </div>
-  </nav>
+      </div>
+  </div>
+</nav>
   
   <div class="relative container mx-auto px-4 !min-h-screen   pb-20">
     <div class="relative flex xl:flex-row flex-col justify-center items-center -m-6 lg:pt-32 pb-36 min-h-screen ">
@@ -182,14 +176,14 @@ margin: 0;
       <div class="flex-1 p-6">
         <div class="lg:max-w-2xl mx-auto">
           <div class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
-            <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http:/www.w3.org/2000/svg">
               <path d="M6.33427 2.74895C6.54382 2.10403 7.45621 2.10403 7.66575 2.74895L8.41445 5.0532C8.50816 5.34162 8.77693 5.53689 9.08019 5.53689H11.503C12.1811 5.53689 12.4631 6.40462 11.9145 6.8032L9.95436 8.22731C9.70902 8.40556 9.60636 8.72152 9.70007 9.00994L10.4488 11.3142C10.6583 11.9591 9.92018 12.4954 9.37158 12.0968L7.41146 10.6727C7.16612 10.4945 6.8339 10.4945 6.58856 10.6727L4.62844 12.0968C4.07985 12.4954 3.34171 11.9591 3.55126 11.3142L4.29995 9.00994C4.39367 8.72152 4.29101 8.40556 4.04566 8.22731L2.08555 6.8032C1.53695 6.40462 1.81889 5.53689 2.497 5.53689H4.91984C5.22309 5.53689 5.49186 5.34162 5.58558 5.0532L6.33427 2.74895Z" fill="white"></path>
             </svg>
             <span class="matrix-text">
               <img loading="lazy" decoding="async" loading="lazy" decoding="async" src="./public/images/icon/pplg-white-icon.svg" alt="PPLG Icon" class="w-20">
             </span>
           </div>
-          <h1 class="mb-6  text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text p-4">Pengembangan Perangkat Lunak dan Gim</h1>
+          <h1 class="mb-6  text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text  p-4">Pengembangan Perangkat Lunak dan Gim</h1>
           <p class="mb-10 font-medium text-xl text-center text-white">
             Website mengenai Kelas RPL Angkatan 2022/2023
             <br>
@@ -198,7 +192,7 @@ margin: 0;
           <button class="group mb-9 relative flex items-center justify-center  px-24 py-5 mx-auto w-full lg:w-auto uppercase text-white text-xs font-semibold tracking-px bg-gray-900 overflow-hidden rounded-md">
             <div class="absolute transform -translate-x-full group-hover:-translate-x-0 h-full w-full transition ease-in-out duration-500 bg-gradient-fuchsia"></div>
             <p class="relative z-10 mr-2">Project kami</p>
-            <svg class="relative z-10" width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="relative z-10" width="19" height="18" viewbox="0 0 19 18" fill="none" xmlns="http:/www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49999 16.2C13.4764 16.2 16.7 12.9764 16.7 8.99999C16.7 5.02354 13.4764 1.79999 9.49999 1.79999C5.52354 1.79999 2.29999 5.02354 2.29999 8.99999C2.29999 12.9764 5.52354 16.2 9.49999 16.2ZM12.8364 8.36359L10.1364 5.66359C9.78491 5.31212 9.21506 5.31212 8.86359 5.66359C8.51212 6.01506 8.51212 6.58491 8.86359 6.93638L10.0272 8.09999L6.79999 8.09999C6.30293 8.09999 5.89999 8.50293 5.89999 8.99999C5.89999 9.49704 6.30293 9.89999 6.79999 9.89999H10.0272L8.86359 11.0636C8.51212 11.4151 8.51212 11.9849 8.86359 12.3364C9.21506 12.6879 9.78491 12.6879 10.1364 12.3364L12.8364 9.63638C13.1879 9.28491 13.1879 8.71506 12.8364 8.36359Z" fill="white"></path>
             </svg>
           </button>
@@ -263,10 +257,10 @@ margin: 0;
             </p>
         </div>
     </div>
-    <div class="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2" id="card-container">
+    <div class="grid grid-cols-2 gap-12 lg:col-span-2 sm:grid-cols-2" id="card-container">
 
     <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="fade-down-right" data-aos-delay="500">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+      <svg xmlns="http:/www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
         <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
             C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
             c30.113,0,54.855-24.655,54.855-54.833V397.01h-31.429C310.166,397.01,310.166,397.593,310.166,397.593z M193.015,475.226
@@ -289,7 +283,7 @@ margin: 0;
       </div>
     </div>
     <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="fade-down-left" data-aos-delay="500">
-      <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" 
            viewBox="0 0 34.418 34.418" xml:space="preserve" width="40" height="40" class="icon default-icon text-gray-200">
         <g>
           <g>
@@ -317,7 +311,7 @@ margin: 0;
     </div>
     
     <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="fade-up-right" data-aos-delay="500">
-      <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" 
        viewBox="0 0 512 445.91" xml:space="preserve" width="40" height="40" class="icon default-icon text-gray-200">
       <g>
         <g>
@@ -338,7 +332,7 @@ margin: 0;
     </div>
 
     <div class="relative flex flex-col items-center space-y-4 p-4 rounded-lg transition-colors duration-300 group card" data-aos="fade-up-left" data-aos-delay="500">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
+      <svg xmlns="http:/www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
                 
       <path d="M285.195,399.619c-1.621,0-2.871-1.327-2.871-2.911    c0-1.62,1.25-2.909,2.871-2.909h38.094c1.622,0,2.875,1.289,2.875,2.909c0,1.584-1.253,2.911-2.875,2.911H285.195z     M285.195,423.491c-1.621,0-2.871-1.289-2.871-2.911c0-1.62,1.25-2.909,2.871-2.909h38.094c1.622,0,2.875,1.289,2.875,2.909    c0,1.622-1.253,2.911-2.875,2.911H285.195z M365.066,320.413c-11.346-6.04-24.83-13.298-40.6-22.251l-41.85,68.854    c-0.148,0.222-0.293,0.405-0.44,0.627c-1.105,1.178-2.946,1.252-4.128,0.147l-21.955-20.483l-24.314,24.167v0.036l0,0h-0.075    v0.038l-0.072,0.036v0.037l0,0v0.037h-0.072v0.035l0,0l-0.076,0.038l0,0v0.036l-0.072,0.038l-0.076,0.036l0,0l-0.221,0.111    l-0.072,0.036l0,0l-0.075,0.037l0,0l0,0l-0.072,0.036l0,0l-0.072,0.037l-0.076,0.037l0,0l-0.073,0.037l0,0h-0.076l0,0    l-0.072,0.037l0,0h-0.072l0,0l-0.076,0.035l0,0h-0.072l0,0h-0.075l0,0l-0.072,0.038l0,0l0,0h-0.072l0,0h-0.076l0,0h-0.072l0,0    h-0.076l0,0h-0.145h-0.076h-0.072h-0.075h-0.072l0,0h-0.076l0,0l-0.072-0.038l0,0h-0.072l0,0h-0.076l0,0l-0.072-0.035l0,0h-0.076    l-0.072-0.037l0,0h-0.072l0,0l-0.147-0.074l0,0l-0.148-0.073l0,0l-0.072-0.037l0,0l-0.076-0.036l0,0l0,0l-0.072-0.038l0,0    l-0.148-0.073v-0.036h-0.072l-0.075-0.112h-0.072v-0.035v-0.037h-0.076v-0.037v-0.036h-0.072v-0.038h-0.072v-0.036v-0.037h-0.076    V371.4v-0.038h-0.072v-0.036v-0.038l-0.075-0.035l0,0l-0.073-0.074v-0.037l-0.072-0.185l0,0l-0.075-0.036l-0.072-0.147    l-0.076-0.11l-39.639-72.427c-16.207,9.21-29.987,16.541-41.405,22.62c-26.526,14.183-40.379,21.551-47.156,32.565    c-7.367,12.01-7.147,29.398-6.63,65.611c0.147,10.278,0.295,21.993,0.295,34.04c54.521,12.452,108.969,18.53,163.421,18.456    c54.449-0.073,108.896-6.335,163.421-18.456c0-11.604,0.145-23.062,0.293-33.155c0.443-36.583,0.664-54.155-6.778-66.312    C406.031,342.37,392.03,334.854,365.066,320.413z M259.925,342.886l19.45,18.199l40.303-66.349l-14.66-13.445L259.925,342.886z     M192.289,294.811l38.166,69.811l21.735-21.661l-45.167-61.669L192.289,294.811z M257.495,68.873    c-21.884,0-41.777,8.88-56.146,23.247c-11.566,11.567-19.525,26.672-22.251,43.507c0.147,0.406,0.22,0.884,0.147,1.326    c-0.295,1.841-0.516,3.72-0.588,5.599c-0.148,1.843-0.221,3.759-0.221,5.711c0,4.273,0.293,8.841,0.881,13.63v0.111    c0.592,4.79,1.477,9.799,2.582,14.81c0.072,0.258,0.146,0.589,0.146,0.883c0,0.259-0.073,0.479-0.073,0.737    c4.2,18.162,11.935,37.614,22.917,53.528c13.112,19.009,30.795,32.824,52.606,32.824c21.808,0,39.563-13.815,52.679-32.824    c1.4-2.063,2.799-4.2,4.128-6.373l-44.208,16.799c-2.285,0.847-4.644,0.737-6.705-0.185c-1.99-0.922-3.76-2.616-4.568-4.863    c-0.885-2.247-0.736-4.642,0.221-6.667c0.884-2.063,2.578-3.758,4.787-4.605l61.744-23.504    c7.441-18.972,11.349-38.865,11.349-54.3c0-21.92-8.915-41.777-23.284-56.144C299.27,77.752,279.449,68.873,257.495,68.873z     M194.499,129.364c-0.737-1.4-0.148-3.168,1.25-3.905c1.4-0.737,3.17-0.147,3.907,1.252c1.545,2.948,3.387,5.49,5.452,7.663    c6.262,6.668,14.81,9.983,23.501,10.794c8.696,0.811,17.611-0.921,24.317-4.384c2.43-1.253,4.641-2.727,6.333-4.421l0.076-0.038    c15.25-14.441,20.923-17.129,23.357-14.588l0.145,0.147c1.477,1.731,1.032,4.237,0.443,7.146    c-0.443,2.137-0.957,4.606-0.516,5.785v0.074c0.367,0.589,1.841,0.553,5.82-0.922c5.453-2.063,13.484-4.532,20.703-4.863h0.076    c8.104-0.295,15.177,1.989,17.459,10.131c0.445,1.547-0.512,3.131-2.062,3.573c-1.546,0.405-3.167-0.515-3.535-2.025    c-1.329-4.752-6.116-6.078-11.643-5.858h-0.072c-6.413,0.295-13.853,2.58-18.864,4.458c-8.18,3.02-11.787,1.289-13.26-2.284    l-0.076-0.295c-1.029-2.689-0.368-6.042,0.221-8.915c0.296-1.4,1.4-1.695,0.961-2.137c-0.148-0.185-3.172,3.463-15.178,14.81    v0.037c-2.214,2.063-4.793,3.832-7.739,5.341c-7.664,3.979-17.684,5.932-27.481,5.011c-10.021-0.922-19.893-4.826-27.264-12.563    C198.403,135.848,196.265,132.827,194.499,129.364z M279.375,178.692c-1.474,0.626-3.168-0.073-3.832-1.547    c-0.588-1.474,0.076-3.168,1.549-3.795c0.072-0.037,18.053-8.104,26.744,0.627c1.105,1.105,1.105,2.983,0,4.125    c-1.177,1.105-3.019,1.105-4.123-0.037C293.891,172.245,279.449,178.692,279.375,178.692z M159.5,139.458    c3.315-27.703,15.105-52.275,32.272-69.995c17.459-18.051,40.524-28.993,65.722-28.993c25.271,0,48.331,10.942,65.794,28.993    c17.167,17.72,28.958,42.292,32.272,69.995h7.663v35.33h-23.137c1.915-9.506,2.875-18.567,2.875-26.524    c0-2.948-0.076-5.895-0.443-8.805h7.222c-3.315-26.12-14.44-49.254-30.651-65.943c-16.431-16.946-37.946-27.224-61.595-27.224    c-23.578,0-45.168,10.278-61.523,27.224c-16.21,16.688-27.408,39.823-30.651,65.943h7.147c-0.296,2.91-0.441,5.857-0.441,8.805    c0,7.957,0.958,17.019,2.947,26.524h-22.695v-35.33H159.5z M348.56,189.892c0-1.622,1.329-2.948,2.95-2.948    c1.618,0,2.871,1.326,2.871,2.948v12.157c0,1.326-0.884,2.432-2.062,2.799l-84.292,32.087c-1.545,0.589-3.166-0.184-3.755-1.657    c-0.589-1.51,0.147-3.205,1.694-3.758l82.593-31.461V189.892z M237.97,173.35c1.473,0.627,2.134,2.322,1.473,3.795    c-0.589,1.474-2.286,2.173-3.759,1.547c-0.072,0-14.513-6.447-20.334-0.627c-1.105,1.142-2.947,1.142-4.127,0.037    c-1.104-1.142-1.104-3.02,0-4.125C219.918,165.246,237.894,173.313,237.97,173.35z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
     </svg>
@@ -365,7 +359,7 @@ margin: 0;
             Guru PPLG <br>
           </h1>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 duration-500 " style="overflow: hidden important;">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 duration-500 " style="overflow: hidden important;">
           <div class="grid-items !transition-transform !duration-300 !hover:scale-105" data-aos="zoom-in-right" data-aos="fade-right" data-aos-delay="100" data-aos-offset="400">
             <a href="javascript:void(0)" class="block bg-gray-700/60 border-2 !pointer-events-none shadow-2xl rounded-2xl shadow-blue-400/50 border-blue-400" style="pointer-events:none !important;">
               <img loading="lazy" decoding="async" alt="" src="./public/images/guru/guru-yuni.webp" class="object-cover w-full h-64 sm:h-80 lg:h-96 rounded-t-2xl rounded-b-3xl object-top">
@@ -375,7 +369,7 @@ margin: 0;
               </h3>
         
               <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-                Kepala Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+                Mengajar Mata Pelajaran : PEMOGRAMAN WEB, P.BERGERAK, dan MPP 
               </p>
             </a>
           </div>
@@ -389,7 +383,8 @@ margin: 0;
               </h3>
         
               <p class="max-w-sm px-5 py-3 pb-5 mt-2 text-base text-gray-300 sm:text-xs md:text-base">
-                Guru Produktif Jurusan Pengembangan Perangkat Lunak dan Gim (PPLG)
+                Mengajar Mata Pelajaran : DDPK ( P.DASAR & PBO ), PEMOGRAMAN WEB, MPP, P.BERGERAK, dan BASIS DATA 
+
               </p>
             </a>
           </div>
@@ -422,6 +417,9 @@ margin: 0;
             </a>
           </div>
         </div>
+
+
+
       <div class="mt-8" data-aos="zoom-in-down" data-aos="fade-left">
         <div class="swiper-container w-full rounded-lg overflow-hidden border-2 shadow-2xl shadow-blue-400/50 border-blue-400" >
           <div class="swiper-wrapper">
@@ -443,7 +441,7 @@ margin: 0;
         </div>
       </div>
 
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https:/unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
     </div>
@@ -536,18 +534,25 @@ margin: 0;
       </h1>
       <div class="flex flex-col items-center text-white " style="overflow: hidden !important;">
         <div class="flex flex-col sm:flex-col md:flex-row gap-6 " style="overflow: hidden !important;">
-          <div class="flex flex-col gap-4 sm:w-1/3  !justify-center ">
+          <div class="flex flex-col gap-4 sm:w-1/3 !justify-center ">
             <div class="flex flex-col md:flex-row gap-4 ">
-              <img src="./public/images/guru/guru-meri.webp"  alt="gambar fasilitas" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full  h-auto object-cover">
-              <img src="./public/images/guru/guru-meri.webp"  alt="gambar fasilitas" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full  h-auto object-cover block xl:block md:hidden">
-              
+              <a href="./public/images/kelas-rpl/kelas-rpl-labor.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <img src="./public/images/kelas-rpl/kelas-rpl-labor.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
+              </a>
+              <a href="./public/images/kelas-rpl/kelas-rpl-labor-2.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <img src="./public/images/kelas-rpl/kelas-rpl-labor-2.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover block xl:block md:hidden">
+              </a>
             </div>
             <div class="flex flex-col md:flex-row gap-4 ">
-              <img src="./public/images/guru/guru-meri.webp"  alt="gambar fasilitas" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full  h-auto object-cover">
-              <img src="./public/images/guru/guru-meri.webp"  alt="gambar fasilitas" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full  h-auto object-cover blcok xl:block md:hidden">
+              <a href="./public/images/kelas-rpl/kelas-rpl-labor-3.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <img src="./public/images/kelas-rpl/kelas-rpl-labor-3.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
+              </a>
+              <a href="./public/images/kelas-rpl/kelas-rpl-12-2.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <img src="./public/images/kelas-rpl/kelas-rpl-12-2.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover block xl:block md:hidden">
+              </a>
             </div>
           </div>
-      
+          
           <div class="sm:w-2/3">
             <p class="text-blue-400 mb-4">
               Sarana dan prasarana penunjang pembelajaran di program keahlian Rekayasa Perangkat Lunak
@@ -568,7 +573,7 @@ margin: 0;
     </div>
   </section>
 <script src="./public/js/aos.js"></script>
-
+<script src="./public/js/tw-ele.js"></script>
 <script src="./public/js/main.js"></script>
 <script src="./public/js/alpine.js" defer></script>
 </body>

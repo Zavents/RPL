@@ -4,6 +4,13 @@
   font-weight: normal !important;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2') format('woff2'),
+       url('../font/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: '印品鸿蒙体', sans-serif;
@@ -91,6 +98,8 @@ background: rgb(42, 42, 111);
 .navbar-scrolled {
   background-color: rgba(0, 0, 0, 0.7);
   padding: none !important; /* Adjust padding as desired */
+  
+  backdrop-filter: blur(8px) !important; /* Adjust the blur intensity as desired */
 
 
 }
@@ -99,7 +108,7 @@ background: rgb(42, 42, 111);
 .navbar-scrolled {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.2rem 2.5rem; /* Adjust padding as desired */
-  backdrop-filter: blur(8px); /* Adjust the blur intensity as desired */
+  backdrop-filter: blur(8px) !important; /* Adjust the blur intensity as desired */
 
 }
 
