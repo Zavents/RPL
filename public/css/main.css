@@ -86,8 +86,22 @@ background: rgb(42, 42, 111);
     transition: background-color 0.5s ease, padding 0.5s ease;
   }
   
-  .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 0.2rem 2.5rem; /* Adjust padding as desired */
-  }
-  
+
+@media (max-width: 1022px) {
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: none !important; /* Adjust padding as desired */
+
+
+}
+
+}@media (min-width: 1032px) {
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.2rem 2.5rem; /* Adjust padding as desired */
+  backdrop-filter: blur(8px); /* Adjust the blur intensity as desired */
+
+}
+
+
+}
