@@ -72,3 +72,26 @@
       readMoreLink.innerText = "Read more";
     }
   }
+ 
+    // JavaScript to adjust data-aos-offset on mobile
+    function adjustAOSForMobile() {
+      const elements = document.querySelectorAll('[data-aos-offset]');
+      
+      elements.forEach(element => {
+        if (window.innerWidth <= 768) { // Mobile breakpoint
+          element.setAttribute('data-aos-offset', '0'); // Disable offset on mobile
+        } else {
+          element.setAttribute('data-aos-offset', '400'); // Original offset on desktop
+        }
+      });
+      
+      AOS.refresh(); // Refresh AOS to apply changes
+    }
+
+    // Run on initial load
+    adjustAOSForMobile();
+
+    // Run on window resize
+    window.addEventListener('resize', adjustAOSForMobile);
+  
+  
