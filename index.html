@@ -213,6 +213,27 @@
   
   
   <script>
+    AOS.init({ once: false }); 
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector("nav");
+      if (window.scrollY > 100) { 
+        navbar.classList.add("navbar-scrolled");
+      } else {
+        navbar.classList.remove("navbar-scrolled");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      new Swiper('.swiper-container', {
+          loop: true, 
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: {
+            delay: 5000, 
+            disableOnInteraction: false,
+          },
+        });
       const cards = document.querySelectorAll(".card");
       let currentIndex = 0;
     
@@ -252,7 +273,31 @@
       }
   
       setInterval(animateCards, 5000);
+    });
+ 
+   
+      // JavaScript to adjust data-aos-offset on mobile
+      function adjustAOSForMobile() {
+        const elements = document.querySelectorAll('[data-aos-offset]');
+        
+        elements.forEach(element => {
+          if (window.innerWidth <= 768) { // Mobile breakpoint
+            element.setAttribute('data-aos-offset', '0'); // Disable offset on mobile
+          } else {
+            element.setAttribute('data-aos-offset', '400'); // Original offset on desktop
+          }
+        });
+        
+        AOS.refresh(); // Refresh AOS to apply changes
+      }
   
+      // Run on initial load
+      adjustAOSForMobile();
+  
+      // Run on window resize
+      window.addEventListener('resize', adjustAOSForMobile);
+    
+    
     </script>
   <section id="about">
   <section class="relative py-12 bg-white/50 pb-20  pt-20 p-4" style="overflow: hidden !important;" >
@@ -264,7 +309,7 @@
     <span id="moreText" style="display: none;">
       Dalam PPLG, siswa belajar berbagai keterampilan seperti pemrograman, desain antarmuka, pemecahan masalah, dan pengujian perangkat lunak, yang berguna di dunia industri teknologi.
     </span>
-    <a id="readMoreLink" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; toggleReadMore()" class=" hover:underline text-blue-300" data-cf-modified-84d675272a96fd9e79501afb-="">Read more</a>
+    <a id="readMoreLink" href="javascript:void(0);" onclick="toggleReadMore()" class="hover:underline text-blue-300">Read more</a>
   </p>
   <style>
     @keyframes flip-icon {
@@ -284,7 +329,19 @@
   }
   
   </style>
+  <script>   
+    function toggleReadMore() {
+      const moreText = document.getElementById("moreText");
+      const readMoreLink = document.getElementById("readMoreLink");
   
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        readMoreLink.innerText = "Read less";
+      } else {
+        moreText.style.display = "none";
+        readMoreLink.innerText = "Read more";
+      }
+    }</script>
   
     <div class="absolute inset-0 bg-cover bg-center blud-md" style="background-image: url('./public/images/tujuan/tujuan-bg.jpg');">
       
