@@ -356,9 +356,52 @@
               </p>
           </div>
       </div>
-      <div class="grid grid-cols-2 lg:col-span-2 sm:grid-cols-2" id="card-container">
-  
-      <div class="relative flex flex-col items-center space-y-4 p-2 rounded-lg transition-colors duration-300 group card" data-aos="fade-down-right" data-aos-delay="500">
+      <div class="grid grid-cols-2 lg:col-span-2 sm:grid-cols-2" id="!card-container">
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+          const cards = document.querySelectorAll(".card");
+          let currentIndex = 0;
+        
+          function animateCards() {
+            cards.forEach((card, index) => {
+              card.classList.remove("scale-125", "bg-[#4A2C2A]");
+              card.querySelector(".icon").classList.remove("active-icon");
+              card.querySelector("h3").classList.remove("active-title");
+              card.querySelector("p").classList.remove("active-text");
+        
+              if (index === currentIndex) {
+                card.classList.add("scale-125", "bg-[#4A2C2A]");
+                card.querySelector(".icon").classList.add("active-icon");
+                card.querySelector("h3").classList.add("active-title");
+                card.querySelector("p").classList.add("active-text");
+                const img = card.querySelector(".icon");
+                const h3 = card.querySelector("h3");
+                const p = card.querySelector("p");
+      
+                img.classList.remove("animate__animated", "animate__flipInX");
+                h3.classList.remove("animate__animated", "animate__fadeInLeft");
+                p.classList.remove("animate__animated", "animate__fadeInUp");
+        
+                void img.offsetWidth; 
+                void h3.offsetWidth;
+                void p.offsetWidth;
+        
+                setTimeout(() => {
+                  img.classList.add("animate__animated", "animate__flipInX");
+                  h3.classList.add("animate__animated", "animate__fadeInLeft");
+                  p.classList.add("animate__animated", "animate__fadeInUp");
+                }, 0);
+              }
+            });
+        
+            currentIndex = (currentIndex + 1) % cards.length;
+          }
+      
+          setInterval(animateCards, 5000);
+        });
+        
+        </script>
+      <div class="relative flex flex-col items-center space-y-4 p-2 rounded-lg transition-colors duration-300 group !card" data-aos="fade-down-right" data-aos-delay="500">
         <svg xmlns="http:/www.w3.org/2000/svg" width="40" height="40" class="icon default-icon  text-gray-200" viewBox="0 0 502.664 502.664">
           <path d="M310.166,397.593H75.951V61.671h234.151v25.13h31.472V54.811C341.595,24.677,316.853,0,286.74,0H99.355
               C69.199,0,44.522,24.677,44.522,54.811v393.02c0,30.178,24.677,54.833,54.833,54.833H286.74
