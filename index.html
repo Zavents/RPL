@@ -45,6 +45,9 @@
     <link rel="stylesheet" href="./public/css/aos.css" />
     <link rel="stylesheet" href="./public/css/swiper.css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+
 
 
     <script type="application/ld+json">
@@ -63,23 +66,23 @@
       
 
 
-    <style>
-      @font-face {
-        font-family: '印品鸿蒙体' !important;
-        src: url('../font/yinpin_hongmengti.ttf') format('truetype') !important;
-        font-weight: normal !important;
-        font-style: normal;
-      }
-      
-      body {  
-        font-family: '印品鸿蒙体', sans-serif !important;
-        font-weight: normal !important;
-      }
-      p{
-        font-family: 'poppins', sans-serif !important;
-        font-weight: normal !important;
-      }
-    </style>
+<style>
+
+  body {
+    font-family: 'RocknRoll One', sans-serif !important;
+  }
+  
+  
+  h1 ,h2, h3,h4,h5 {
+    font-family: 'RocknRoll One', sans-serif !important;
+
+  }
+
+  p {
+    font-family: 'Poppins' !important;
+
+  }
+</style>
 
     <script>
       AOS.init({ once: false }); 
@@ -157,15 +160,15 @@
         }
       }
      
-        // JavaScript to adjust data-aos-offset on mobile
+       
         function adjustAOSForMobile() {
           const elements = document.querySelectorAll('[data-aos-offset]');
           
           elements.forEach(element => {
-            if (window.innerWidth <= 768) { // Mobile breakpoint
-              element.setAttribute('data-aos-offset', '0'); // Disable offset on mobile
+            if (window.innerWidth <= 768) { 
+              element.setAttribute('data-aos-offset', '0'); 
             } else {
-              element.setAttribute('data-aos-offset', '400'); // Original offset on desktop
+              element.setAttribute('data-aos-offset', '700'); 
             }
           });
           
@@ -268,11 +271,11 @@
     
     <div class="relative container mx-auto px-4 !min-h-screen   pb-20">
       <div class="relative flex xl:flex-row flex-col justify-center items-center -m-6 lg:pt-32 pb-36 min-h-screen ">
-        <div class="w-full xl:w-auto p-6 self-start pt-10">
+        <div class="w-full xl:w-auto p-6 self-start pt-10" data-aos="fade-right" data-aos-delay="100">
           <img loading="lazy" decoding="async" class="mx-auto  transition-transform duration-300 hover:scale-125 " loading="lazy" decoding="async" src="./public/images/wildan-header.svg" alt="">
           <p class="text-lg text-center font-bold mt-4 text-white">Wildan Fathan</p>
         </div>
-        <div class="flex-1 p-6">
+        <div class="flex-1 p-6"  data-aos="fade-in" data-aos-delay="700">
           <div class="lg:max-w-2xl mx-auto">
             <div class="mb-6  flex items-center max-w-max mx-auto px-5 py-2.5 uppercase font-semibold tracking-px text-white bg-white bg-opacity-20 rounded-lg text-xl animate-pulse ">
               <svg class="mr-2 matrix-icon" width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http:/www.w3.org/2000/svg">
@@ -283,7 +286,7 @@
               </span>
             </div>
             <h1 class="mb-6  text-center text-white text-4xl md:text-9xl xl:text-12xl font-bold matrix-text  p-4">Pengembangan Perangkat Lunak dan Gim</h1>
-            <p class="mb-10 font-medium text-xl text-center text-white">
+            <p class="mb-10 font-medium text-md md:text-xl text-center text-white">
               Website mengenai Kelas RPL Angkatan 2022/2023
               <br>
               Kreasi Website dan Design Gambar Lainnya !
@@ -298,7 +301,7 @@
             <ul class="flex justify-center"></ul>
           </div>
         </div>
-        <div class="w-full xl:w-auto p-6 self-end">
+        <div class="w-full xl:w-auto p-6 self-end" data-aos="fade-left" data-aos-delay="300">
           <img loading="lazy" decoding="async" class="mx-auto  transition-transform duration-300 hover:scale-125" loading="lazy" decoding="async" src="./public/images/rahsya-header.svg" alt="">
           <p class="text-lg text-center font-bold mt-4 text-white">Rahsya Benova Akbar</p>
         </div>
@@ -351,7 +354,7 @@
       <div class="flex items-center justify-center animate__animated animate__fadeInLeft ms1s lg:col-span-1 lg:row-start-1">
           <div>
               <h1 class="mt-2 text-xl text-white text-center lg:text-left md:text-4xl tracking-wide "  data-aos="zoom-out-right">Tujuan Jurusan</h1>    
-              <p class="mt-4 text-gray-200" data-aos="zoom-out-left" data-aos-offset="200"            >
+              <p class="mt-4 text-gray-200" data-aos="zoom-out-left"        >
                   Jurusan PPLG, tujuan jurusan ini adalah membekali siswa dengan keterampilan dalam pengembangan perangkat lunak, pemrograman, dan teknologi digital. Kami fokus pada penguasaan teknik coding, pembuatan aplikasi, dan analisis sistem yang relevan dengan industri. Harapannya, lulusan siap bersaing dalam dunia kerja atau melanjutkan pendidikan lebih tinggi.
               </p>
           </div>
@@ -686,18 +689,18 @@
           <div class="flex flex-col sm:flex-col md:flex-row gap-6 " style="overflow: hidden !important;">
             <div class="flex flex-col gap-4 sm:w-1/3 !justify-center ">
               <div class="flex flex-col lg:flex-row gap-4 ">
-                <a href="./public/images/kelas-rpl/kelas-rpl-10-ppl-4.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <a href="./public/images/kelas-rpl/kelas-rpl-10-ppl-4.webp" data-aos="fade-down-right" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
                   <img src="./public/images/kelas-rpl/kelas-rpl-10-ppl-4.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
                 </a>
-                <a href="./public/images/kelas-rpl/kelas-rpl-11-ppl-2.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <a href="./public/images/kelas-rpl/kelas-rpl-11-ppl-2.webp" data-aos="fade-down-left" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
                   <img src="./public/images/kelas-rpl/kelas-rpl-11-ppl-2.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
                 </a>
               </div>
               <div class="flex flex-col lg:flex-row gap-4 ">
-                <a href="./public/images/fasilitas-kerja-sama.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <a href="./public/images/fasilitas-kerja-sama.webp" data-aos="fade-up-right" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
                   <img src="./public/images/fasilitas-kerja-sama.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
                 </a>
-                <a href="./public/images/kelas-rpl/kelas-rpl-labor-ppl-6.webp" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
+                <a href="./public/images/kelas-rpl/kelas-rpl-labor-ppl-6.webp" data-aos="fade-up-left" data-fancybox="gallery" data-caption="gambar fasilitas" loading="lazy " decoding="async">
                   <img src="./public/images/kelas-rpl/kelas-rpl-labor-ppl-6.webp" alt="gambar fasilitas" loading="lazy " decoding="async" class="rounded-lg shadow-lg xl:w-44 lg:w-56 w-full h-auto object-cover">
                 </a>
               </div>
@@ -705,17 +708,17 @@
             
             <div class="sm:w-2/3">
 
-              <h3 class="text-xl text-blue-400 font-semibold mb-2">Laboratorium</h3>
-              <p class="mb-4">
+              <h3 class="text-xl text-blue-400 font-semibold mb-2" data-aos="fade-up">Laboratorium</h3>
+              <p class="mb-4" data-aos="fade-up-right">
                 Jurusan RPL dilengkapi dengan laboratorium untuk menunjang pembelajaran produktif siswa. Setiap laboratorium ditujukan untuk berfokus pada pembelajaran tertentu.
               </p>
-              <h3 class="text-xl text-blue-400 font-semibold mb-2">Kerjasama Dunia Usaha dan Industri</h3>
-              <p class="mb-4">
+              <h3 class="text-xl text-blue-400 font-semibold mb-2" data-aos="fade-up">Kerjasama Dunia Usaha dan Industri</h3>
+              <p class="mb-4" data-aos="fade-up-right">
                 Jurusan RPL resmi menjalin kerja sama dengan PT NETVIRO melalui MoU. Kerja sama ini bertujuan meningkatkan pengalaman industri bagi siswa dan memperkuat kompetensi mereka di bidang teknologi.
               </p>
-              <h3 class="text-xl text-blue-400 font-semibold mb-2">Kompetensi/Materi yang diajarkan</h3>
+              <h3 class="text-xl text-blue-400 font-semibold mb-2" data-aos="fade-up">Kompetensi/Materi yang diajarkan</h3>
               <p>
-                <ul class="flex flex-wrap gap-4 text-center" style=" font-family: 'poppins', sans-serif !important;
+                <ul class="flex flex-wrap gap-4 text-center" data-aos="fade-up-right" style=" font-family: 'poppins', sans-serif !important;
         font-weight: normal !important;">
                   <li class="flex-2">
                     Sistem Komputer,
