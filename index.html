@@ -182,10 +182,10 @@
     </script>
 
 </head>
-<body class="antialiased bg-body text-body font-body" loading="lazy " decoding="async" decoding="ansync" style="background-image: url(./public/images/background.gif);">
- 
+  <body class="antialiased bg-body text-body font-body" loading="lazy " decoding="async" decoding="ansync" style="background-image: url(./public/images/background.gif);">
+   
   <section x-data="{ mobileNavOpen: false }" 
-  class="overflow-hidden bg-cover bg-center h-screen" 
+  class="overflow-hidden bg-cover bg-center min-h-screen" 
   style="background-image: url('./public/images/bg-rpl.webp');
   background-size: cover;
   background-position: center;
@@ -193,10 +193,7 @@
   padding: 0;
   margin: 0;
   ">
-
-  <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 w-full h-96 "></div>
-  
-  <div class="absolute inset-0 bg-black opacity-80"></div>
+  <div class="absolute inset-0 bg-black/70 min-h-screen" style="height: 200vh; /* This sets the section to cover the full viewport height */"></div>
   
   <nav id="navbar" class="fixed z-50 flex items-center justify-between w-screen py-4 mx-auto transition-all duration-500   flex-nowrap shadow-dark-mild lg:flex-wrap lg:justify-start backdrop-blur-0" data-twe-navbar-ref>
     <div class="flex flex-wrap items-center justify-between w-full px-8 mx-auto md:px-16">
@@ -310,7 +307,8 @@
   </section>
   
   
-
+  
+  
   <section id="about">
   <section class="relative py-12 bg-white/50 pb-20  pt-20 p-4" style="overflow: hidden !important;" >
     <h1 class="max-w-5xl mb-4 text-4xl tracking-tight leading-none md:text-5xl xl:text-6xl text-center text-white  mx-auto pb-10 relative z-20" data-aos="zoom-out-down">
@@ -341,24 +339,10 @@
   }
   
   </style>
-  <script>   
-    function toggleReadMore() {
-      const moreText = document.getElementById("moreText");
-      const readMoreLink = document.getElementById("readMoreLink");
   
-      if (moreText.style.display === "none") {
-        moreText.style.display = "inline";
-        readMoreLink.innerText = "Read less";
-      } else {
-        moreText.style.display = "none";
-        readMoreLink.innerText = "Read more";
-      }
-    }</script>
   
     <div class="absolute inset-0 bg-cover bg-center blud-md" style="background-image: url('./public/images/tujuan/tujuan-bg.jpg');">
       
-  <div class="absolute top-0 left-0 bg-gradient-to-b from-black via-transparent to-transparent z-10 w-full h-96 "></div>
-  
       <div class="absolute inset-0 bg-black opacity-80"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
   
@@ -461,6 +445,7 @@
     </div>
   </section>
   </section>
+  
   
   
 
