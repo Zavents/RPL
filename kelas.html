@@ -357,7 +357,13 @@ margin: 0;
                 <a x-on:click.prevent="category = 'kelas-12'" class="font-video-tab  !text-black group inline-flex w-full sm:w-auto py-4 px-5 mb-2 md:mb-0 md:mr-2 items-center justify-center hover:text-gray-600 transition duration-150 rounded-full hover:bg-white font-bold" href="#">Kelas 12</a></div>
               </div>
           </div>
-          <div x-show="category === 'laboratorium'" class="relative flex flex-wrap -mx-4">
+          <div x-show="category === 'laboratorium'" x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform scale-95"
+     x-transition:enter-end="opacity-100 transform scale-100"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform scale-100"
+     x-transition:leave-end="opacity-0 transform scale-95"
+      class="relative flex flex-wrap -mx-4">
             <div class="relative flex flex-wrap -mx-4">
               <!-- kanan <-- i add this cuz i dont fucking know  -->
               <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
@@ -423,7 +429,13 @@ margin: 0;
              </div>
            </div>
           </div>
-          <div x-show="category === 'kelas-10'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
+          <div x-show="category === 'kelas-10'" x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform scale-95"
+     x-transition:enter-end="opacity-100 transform scale-100"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform scale-100"
+     x-transition:leave-end="opacity-0 transform scale-95"
+      class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
             <div class="relative flex flex-wrap -mx-4">
               <!-- kanan <-- i add this cuz i dont fucking know  -->
               <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
@@ -489,7 +501,13 @@ margin: 0;
              </div>
            </div>
           </div>
-          <div x-show="category === 'kelas-11'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
+          <div x-show="category === 'kelas-11'" x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform scale-95"
+     x-transition:enter-end="opacity-100 transform scale-100"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform scale-100"
+     x-transition:leave-end="opacity-0 transform scale-95"
+      class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
             <div class="relative flex flex-wrap -mx-4">
               <!-- kanan <-- i add this cuz i dont fucking know  -->
               <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
@@ -555,7 +573,13 @@ margin: 0;
              </div>
            </div>
           </div>
-          <div x-show="category === 'kelas-12'" class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
+          <div x-show="category === 'kelas-12'" x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0 transform scale-95"
+     x-transition:enter-end="opacity-100 transform scale-100"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100 transform scale-100"
+     x-transition:leave-end="opacity-0 transform scale-95"
+      class="visibility-item relative flex flex-wrap -mx-4" style="display: none;">
             <div class="relative flex flex-wrap -mx-4">
               <!-- kanan <-- i add this cuz i dont fucking know  -->
               <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
