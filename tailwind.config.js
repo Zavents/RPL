@@ -505,6 +505,12 @@ module.exports = {
                 lineHeight: '1',
               },
             ],
+            xxs: [
+              '0.513rem',
+              {
+                lineHeight: '1rem',
+              },
+            ],
             xs: [
               '0.813rem',
               {
