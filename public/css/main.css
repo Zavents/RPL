@@ -97,3 +97,23 @@ background: rgb(42, 42, 111);
 
 
 }
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0; /* Hide any text inside the button */
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  opacity: 1;
+}
