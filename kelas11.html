@@ -98,7 +98,6 @@
     aria-controls="navbarSupportedContent14"
     aria-expanded="false"
     aria-label="Toggle navigation">
-    <!-- Hamburger icon -->
     <span
     class="[&>svg]:w-7 [&>svg]:stroke-white dark:[&>svg]:stroke-neutral-200">
     <svg
@@ -113,14 +112,11 @@
     </span>
 </button>
 
-    <!-- Collapsible navbar container -->
     <div
         class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto justify-center"
         id="navbarSupportedContent14"
         data-twe-collapse-item>
-        <!-- Left links -->
         <ul class="flex flex-col justify-center lg:rounded-full lg:bg-white list-style-none lg:flex-row ms-auto lg:bg-opacity-10" data-twe-navbar-nav-ref>
-        <!-- Home link -->
             <li class="py-2 ps-1" data-twe-nav-item-ref>
                 <a class="px-3 py-2 text-lg tracking-wider text-white transition-transform hover:text-gray-300 lg:rounded-full lg:hover:bg-white lg:hover:bg-opacity-20" 
                 aria-current="page" href="#about"data-twe-nav-link-ref>About</a>
@@ -148,7 +144,6 @@
         </ul>
 
         
-        <!-- Dropdown -->
     <div class=" ms-auto" data-twe-dropdown-ref>
         <button class=" block py-3.5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10 transition-transform duration-300 hover:scale-125 px-2">smk negeri 2</button>
     </div>
@@ -157,7 +152,6 @@
 </nav>
 
 <style>
-    /* Default style for arrows (desktop and tablet) */
     .arrow {
       position: absolute;
       top: 50%;
@@ -173,12 +167,11 @@
       right: 10px;
     }
   
-    /* Adjust position for mobile L (425px) */
     @media (max-width: 639px) {
       .arrow {
         margin-top: 10px;
-        top: 110%; /* Position above the "Pembelajaran" section */
-        transform: translateY(0); /* Reset vertical alignment */
+        top: 110%;
+        transform: translateY(0); 
       }
       .arrow-left {
         left: 70px;
@@ -192,26 +185,20 @@
   </style>
   
 <section class="relative">
-    <!-- Gradient Overlay -->
     <div class="absolute bottom-0 left-0 z-30 w-full h-full bg-gradient-to-b from-transparent to-black"></div>
     
-    <!-- Transparent Overlay -->
     <div class="absolute inset-0" style="background-color:rgba(0, 0, 0, 0.534)"></div>
 
-    <!-- Content Section -->
     <div class="absolute left-0 z-40 flex flex-col justify-center w-full h-full gap-3 p-4 py-32 mt-10 sm:max-w-xl lg:max-w-3xl xs:gap-5 sm:px-32 sm:mt-0 md:-mt-20 xs:py-20">
         <h1 class="text-xl font-bold leading-tight text-white xs:text-3xl lg:text-5xl xl:text-6xl">
             PENGEMBANGAN PERANGKAT <br> LUNAK DAN GIM
         </h1>
         <p class="text-sm text-white lg:text-lg leading-thight">Kelas 10</p>
     </div>
-
-    <!-- Background Image -->
     <div>
         <img loading="lazy" decoding="async" class="object-cover w-full h-full max-h-screen" src="./public/images/kelas-rpl/kelas-rpl-10-ppl-4.webp" alt="">
     </div>
 
-    <!-- Info Box -->
     <div class="container absolute inset-x-0 left-0 z-40 flex items-start justify-center w-full mx-auto center -bottom-16 xs:-bottom-10 sm:bottom-14 gap-7 px-28">
         <div class="flex items-center max-w-sm gap-3 md:items-start">
 
@@ -224,19 +211,17 @@
         </div>
     </div>
 
-    <!-- Divider -->
     <div class="container max-w-xs sm:max-w-lg lg:max-w-3xl xl:max-w-6xl absolute -bottom-20 xs:-bottom-13 sm:bottom-5 bg-white h-[1px] z-40 mx-auto inset-x-0 px-28"></div>
 
-    <!-- Navigation Buttons -->
     <button class="absolute z-50 flex items-center justify-center w-10 h-10 text-black transition transform -translate-y-1/2 bg-white rounded-full shadow-md arrow arrow-left left-5 top-1/2 hover:bg-gray-100">
-        <a href="#">
+        <a href="./kelas10.html">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
        </a>
     </button>
     <button class="absolute z-50 flex items-center justify-center w-10 h-10 text-black transition transform -translate-y-1/2 bg-white rounded-full shadow-md arrow arrow-right right-5 top-1/2 hover:bg-gray-100">
-        <a href="">
+        <a href="./kelas12.html">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
