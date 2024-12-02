@@ -84,7 +84,6 @@
 </style>
 
     <script>
-      AOS.init({ once: false }); 
       window.addEventListener("scroll", function() {
         const navbar = document.querySelector("nav");
         if (window.scrollY > 100) { 
@@ -1078,14 +1077,35 @@
         Galeri <br>
       </h1>
       <a href="./galeri.html" data-aos-duration="1000" data-aos="fade-in"> 
-        <button class="relative z-10 h-12 p-2 overflow-hidden text-xl font-bold text-blue-400 border border-b-4 border-blue-400 rounded-md cursor-pointer bg-blue-950 w-52 group">
-            <p> View More?</p>
-            <span class="absolute w-56 h-32 transition-transform duration-1000 origin-right transform scale-x-0 -top-8 -left-2 bg-sky-200 rotate-12 group-hover:scale-x-100 group-hover:duration-500"></span>
+        <button
+          class="relative z-10 h-12 p-2 overflow-hidden text-xl font-bold text-blue-400 border border-b-4 border-blue-400 rounded-md cursor-pointer bg-blue-950 w-52 group"
+          data-tippy-content="Beware lags when load the images"
+        >
+          <p>View More?</p>
+          <span class="absolute w-56 h-32 transition-transform duration-1000 origin-right transform scale-x-0 -top-8 -left-2 bg-sky-200 rotate-12 group-hover:scale-x-100 group-hover:duration-500"></span>
           <span class="absolute w-56 h-32 transition-transform duration-700 origin-right transform scale-x-0 -top-8 -left-2 bg-sky-400 rotate-12 group-hover:scale-x-100 group-hover:duration-700"></span>
           <span class="absolute w-56 h-32 transition-transform duration-500 origin-right transform scale-x-0 -top-8 -left-2 bg-blue-950 rotate-12 group-hover:scale-x-100 group-hover:duration-1000"></span>
           <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">More Photo?!</span>
         </button>
       </a>
+      <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+
+      <script>
+       
+        document.addEventListener('DOMContentLoaded', () => {
+          tippy('[data-tippy-content]', {
+            theme: 'light', 
+            placement: 'top', 
+            animation: 'shift-away', 
+            delay: [100, 50], 
+          });
+        });
+      </script>
+
+      
+      
       <div class="flex  justify-center flex-col lg:flex-row gap-4   pt-5 ">
         <div class="flex-row hidden lg:flex gap-4 w-full"data-aos-duration="1000" data-aos="fade-right">
           <div class="w-full">
