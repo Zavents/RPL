@@ -266,31 +266,76 @@ margin: 0;
     </div>
   </nav>
 
-  <div class="preloader fixed inset-0 flex items-center justify-center bg-black z-50">
-    <div class="loading">
-        <img src="./public/images//preload.gif" alt="Loading icon" class="w-16 h-16">
-    </div>
-</div>
-<script>
-    // Function to hide preloader after all assets are loaded
-    window.onload = function () {
-        document.querySelector('.preloader').style.display = 'none';
-    };
 
-    // Run on window resize
-    window.addEventListener('resize', adjustAOSForMobile);
-</script>
-
-
-<section class="relative p-4 pb-20 2xl:py-40" x-data="{ showContent: false }">
+  <section class="relative p-4 pb-20 2xl:py-40" x-data="{ showContent: false }">
   
   <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.466);"></div>
   <div class="container px-4 mx-auto"></div>
   <section x-data="{ category: 'laboratorium' }" class="relative pb-20 overflow-hidden">
     <div class="container relative px-4 mx-auto lg:px-28 p">
       <div class="relative mb-16 text-center">
-
-      
+        <h1 class="relative z-20 max-w-5xl pb-10 mx-auto mb-4 text-4xl leading-none tracking-tight text-center text-white md:text-5xl xl:text-6xl matrix-text" data-aos="zoom-out-down">
+          Jurusan Pengembangan Perangkat Lunak dan Gim <br>
+        </h1>
+        <div class="relative flex flex-wrap -mx-4">
+        <!-- kanan <-- i add this cuz i dont fucking know  -->
+        <div class="w-full px-4 mb-8 lg:w-1/3 lg:mb-0">
+          <div class="relative flex items-end !text-white h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="height: 300px; border: 3px solid rgb(126, 118, 118);">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+              src="./public/images/kelas-rpl/jurusan-1.webp" alt="Kelas RPL">
+            <a href="./public/images/kelas-rpl/jurusan-1.webp" data-fancybox="kelas-rpl" data-caption="Kelas RPL 11-2">
+              <div class="relative">
+                <div class="flex items-center justify-between mb-20">
+                  <span class="transition duration-100 transform group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1"></span>
+                </div>
+                <div class="relative z-50 max-w-lg duration-300 translate-y-5 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+                  <h4 class="mb-3 text-3xl font-medium text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 z-10 w-full duration-300 opacity-0 bg-gradient-to-t from-black to-transparent group-hover:opacity-100"
+                style="height: 300px;"></div>
+            </a>
+          </div>
+        </div>
+        <!-- middle <-- i add this cuz i dont fucking know  -->
+        <div class="w-full px-4 mb-8 lg:w-1/3 lg:mb-0">
+          <div class="relative flex items-end !text-white h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="height: 300px; border: 3px solid rgb(126, 118, 118);">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+              src="./public/images/kelas-rpl/jurusan-2.webp" alt="Kelas RPL">
+            <a href="./public/images/kelas-rpl/jurusan-2.webp" data-fancybox="kelas-rpl" data-caption="Kelas RPL 11-2">
+              <div class="relative">
+                <div class="flex items-center justify-between mb-20">
+                  <span class="transition duration-100 transform group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1"></span>
+                </div>
+                <div class="relative z-50 max-w-lg duration-300 translate-y-5 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+                  <h4 class="mb-3 text-3xl font-medium text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 z-10 w-full duration-300 opacity-0 bg-gradient-to-t from-black to-transparent group-hover:opacity-100"
+                style="height: 300px;"></div>
+            </a>
+          </div>
+        </div>
+        <!-- tengah <-- i add this cuz i dont fucking know  -->
+        <div class="w-full px-4 mb-8 lg:w-1/3 lg:mb-0">
+          <div class="relative flex items-end !text-white h-128 p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="height: 300px; border: 3px solid rgb(126, 118, 118);">
+            <img loading="lazy" decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+              src="./public/images/kelas-rpl/jurusan-1.webp" alt="Kelas RPL">
+            <a href="./public/images/kelas-rpl/jurusan-1.webp" data-fancybox="kelas-rpl" data-caption="Kelas RPL 11-2">
+              <div class="relative">
+                <div class="flex items-center justify-between mb-20">
+                  <span class="transition duration-100 transform group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1"></span>
+                </div>
+                <div class="relative z-50 max-w-lg duration-300 translate-y-5 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+                  <h4 class="mb-3 text-3xl font-medium text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                </div>
+              </div>
+              <div class="absolute bottom-0 left-0 z-10 w-full duration-300 opacity-0 bg-gradient-to-t from-black to-transparent group-hover:opacity-100"
+                style="height: 300px;"></div>
+            </a>
+          </div>
+        </div>
+      </div>
       <h1 class="relative z-20 max-w-5xl pt-20 pb-10 mx-auto mb-4 text-4xl leading-none tracking-tight text-center text-white md:text-5xl xl:text-6xl matrix-text" data-aos="zoom-out-down">
         Kelas PPLG <br>
     </h1>
@@ -579,7 +624,11 @@ margin: 0;
 </section>
   </section>
 
-  <section class="relative p-4 pb-20 2xl:py-40" x-data="{ showContent: false }">
+  
+
+
+
+  <section class="relative p-4 pb-20 2xl:py-40 min-h-screen" x-data="{ showContent: false }">
   
     <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.466);"></div>
     <div class="container px-4 mx-auto">
@@ -591,7 +640,7 @@ margin: 0;
 
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_buk_nadia.webp" alt="galeri_buk_nadia">
             <a href="./public/images/galeri/galeri_buk_nadia.webp" data-fancybox="galeri" data-caption="foto bareng dengan buk nadia">
               <div class="relative">
@@ -606,7 +655,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_1.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_1.webp" data-fancybox="galeri" data-caption="csf">
               <div class="relative">
@@ -621,7 +670,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_2.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_2.webp" data-fancybox="galeri" data-caption="csf2">
               <div class="relative">
@@ -636,7 +685,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_3.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_3.webp" data-fancybox="galeri" data-caption="csf3">
               <div class="relative">
@@ -651,7 +700,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_4.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_4.webp" data-fancybox="galeri" data-caption="csf4">
               <div class="relative">
@@ -666,7 +715,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_5.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_5.webp" data-fancybox="galeri" data-caption="csf5">
               <div class="relative">
@@ -681,7 +730,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_6.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_6.webp" data-fancybox="galeri" data-caption="csf6">
               <div class="relative">
@@ -696,7 +745,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_7.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_7.webp" data-fancybox="galeri" data-caption="csf7">
               <div class="relative">
@@ -711,7 +760,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_csf_8.webp" alt="csf">
             <a href="./public/images/galeri/galeri_csf_8.webp" data-fancybox="galeri" data-caption="csf8">
               <div class="relative">
@@ -726,7 +775,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_event_1.webp" alt="csf">
             <a href="./public/images/galeri/galeri_event_1.webp" data-fancybox="galeri" data-caption="event 1">
               <div class="relative">
@@ -741,7 +790,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_event_2.webp" alt="csf">
             <a href="./public/images/galeri/galeri_event_2.webp" data-fancybox="galeri" data-caption="event 2">
               <div class="relative">
@@ -756,7 +805,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_event_3.webp" alt="csf">
             <a href="./public/images/galeri/galeri_event_3.webp" data-fancybox="galeri" data-caption="event 3">
               <div class="relative">
@@ -771,7 +820,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_event_4.webp" alt="csf">
             <a href="./public/images/galeri/galeri_event_4.webp" data-fancybox="galeri" data-caption="event 4">
               <div class="relative">
@@ -786,7 +835,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2023.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2023.webp" data-fancybox="galeri" data-caption="Hari Guru 2023">
               <div class="relative">
@@ -801,7 +850,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_1.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_1.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 1">
               <div class="relative">
@@ -816,7 +865,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_2.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_2.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 2">
               <div class="relative">
@@ -831,7 +880,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_3.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_3.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 3">
               <div class="relative">
@@ -846,7 +895,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_4.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_4.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 4">
               <div class="relative">
@@ -861,7 +910,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_5.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_5.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 5">
               <div class="relative">
@@ -876,7 +925,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_6.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_6.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 6">
               <div class="relative">
@@ -891,7 +940,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_7.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_7.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 7">
               <div class="relative">
@@ -906,7 +955,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_8.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_8.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 8">
               <div class="relative">
@@ -921,7 +970,7 @@ margin: 0;
         </div>
         <div class="w-1/2 px-2 mb-4 sm:px-4 sm:mb-8 md:w-1/2 lg:w-1/4 lg:mb-0">
           <div class="relative flex items-end !text-white h-64 sm:h-128 p-4 sm:p-6 mb-8 rounded-3xl overflow-hidden group duration-300 hover:shadow-2xl hover:scale-105 hover:shadow-pink-800/50" style="border: 3px solid rgb(126, 118, 118);">
-            <img loading="lazy"  decoding="async" class="absolute top-0 left-0 object-cover w-full h-full"
+            <img  class="absolute top-0 left-0 object-cover w-full h-full"
               src="./public/images/galeri/galeri_guru_2024_9.webp" alt="csf">
             <a href="./public/images/galeri/galeri_guru_2024_9.webp" data-fancybox="galeri" data-caption="Hari Guru 2024 9">
               <div class="relative">
