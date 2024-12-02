@@ -4,7 +4,6 @@
   "private": true,
   "license": "UNLICENSED",
   "author": "",
-  "description": "",
   "scripts": {
     "browsersync": "browser-sync start --directory --server ./public --files ./public/* --startPath index.html",
     "clean": "rimraf public/*",
@@ -34,5 +33,8 @@
   },
   "dependencies": {
     "tw-elements": "^2.0.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "keywords": [],
+  "description": ""
 }
