@@ -11,9 +11,10 @@ gulp.task("scripts", function () {
       "./public/js/alpine.js",
       "./public/js/fancybox.js",
       "./public/js/swiper.js",
-      "./public/js/bundle.min.js"
+      "./public/js/bundle.min.js",
+      "./public/js/galeri.js"
     ])
     .pipe(concat("bundle.min.js"))
-    .pipe(uglify())
+    .pipe(uglify("./public/js/"))
     .pipe(gulp.dest("./public/js/"));
 });

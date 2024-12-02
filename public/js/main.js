@@ -91,7 +91,5 @@
     // Run on initial load
     adjustAOSForMobile();
 
-    // Run on window resize
-    window.addEventListener('resize', adjustAOSForMobile);
-  
+
   

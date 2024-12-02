@@ -185,6 +185,20 @@
 </head>
   <body class="antialiased bg-body text-body font-body" loading="lazy " decoding="async" decoding="ansync" style="background-image: url(./public/images/background.gif);">
    
+  <div class="preloader fixed inset-0 flex items-center justify-center bg-black z-50">
+    <div class="loading">
+        <img src="./public/images//preload.gif" alt="Loading icon" class="w-16 h-16">
+    </div>
+</div>
+<script>
+    // Function to hide preloader after all assets are loaded
+    window.onload = function () {
+        document.querySelector('.preloader').style.display = 'none';
+    };
+
+    // Run on window resize
+    window.addEventListener('resize', adjustAOSForMobile);
+</script>
   <section x-data="{ mobileNavOpen: false }"  
   class="min-h-screen overflow-hidden bg-center bg-cover" 
   style="background-image: url('./public/images/bg-rpl.webp');
