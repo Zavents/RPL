@@ -196,20 +196,7 @@ padding: 0;
 margin: 0;
 ">
 
-<div class="preloader fixed inset-0 flex items-center justify-center bg-black z-50">
-  <div class="loading">
-      <img src="./public/images//preload.gif" alt="Loading icon" class="w-16 h-16">
-  </div>
-</div>
-<script>
-  // Function to hide preloader after all assets are loaded
-  window.onload = function () {
-      document.querySelector('.preloader').style.display = 'none';
-  };
 
-  // Run on window resize
-  window.addEventListener('resize', adjustAOSForMobile);
-</script>
 <nav id="navbar" class="fixed z-40 flex items-center justify-between w-screen py-4 mx-auto transition-all duration-500 flex-nowrap shadow-dark-mild lg:flex-wrap lg:justify-start backdrop-blur-0" data-twe-navbar-ref>
   <div class="flex flex-wrap items-center justify-between w-full p-4 mx-auto md:px-16">
       <div class="">
